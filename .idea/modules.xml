@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Ex_02_DataType/Ex_02_.iml" filepath="$PROJECT_DIR$/Ex_02_DataType/Ex_02_.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA_PROGRAMMING_CODE.iml" filepath="$PROJECT_DIR$/JAVA_PROGRAMMING_CODE.iml" />
     </modules>
   </component>
