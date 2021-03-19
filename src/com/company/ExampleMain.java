@@ -1,15 +1,15 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class ExampleMain {
+
 
     public static void main(String[] args) {
 
-        String sta = "chuoi";
-        print(sta);
+        Scanner scanner = new Scanner(System.in);
+
     }
 
-    private static void print(String st){
-        System.out.println(st);
-    }
 
 }
