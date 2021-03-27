@@ -2,6 +2,8 @@ package file;
 
 import java.io.File;
 
+//https://gpcoder.com/3001-thao-tac-voi-tap-tin-va-thu-muc-trong-java/
+
 public class AbsoluteRelavativePathExample {
     public static void main(String[] args) {
         // Get Current Directory using getAbsolutePath()
