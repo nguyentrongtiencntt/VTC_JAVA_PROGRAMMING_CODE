@@ -6,14 +6,59 @@ import java.time.format.DateTimeFormatter;
 public class TestSomeThing {
     public static void main(String[] args) {
 
-        minusPlus();
-        someThing();
-        getDayMonthYear();
-        checkAfter();
-        //checkBefore();
-        compareTo();
-        // ISO Date
-        convertStringtoLocalDate();
+        LocalDate localDate
+                = LocalDate.now();
+        System.out.println(localDate.getMonth().getValue());
+        System.out.println(localDate.getDayOfMonth());
+        System.out.println(localDate.getYear());
+        System.out.println(localDate);
+
+        LocalDate dateself
+                = LocalDate.of(2021,4,15);
+
+        System.out.println(dateself);
+
+
+
+
+//
+//        System.out.println(localDate);
+//        LocalDate d2 = LocalDate.now().plusDays(1);
+//        LocalDate d3 = LocalDate.now().minusDays(1);
+//        System.out.println(d2);
+//        System.out.println(d3);
+//
+//
+//        LocalDate dateFormat
+//                = LocalDate.parse("22-08-2020",
+//                    DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+//        //Scanner
+//
+//        LocalDate localDate1
+//                = LocalDate.of(2020,8,22);
+//
+//        String ngay = String.valueOf(localDate1.getDayOfMonth());
+//        String thang = String.valueOf(localDate1.getMonth().getValue());
+//        String nam = String.valueOf(localDate1.getYear());
+//        String ngaythangnam = String.format("%s/%s/%s",ngay,thang,nam);
+//        System.out.println(ngaythangnam);
+
+
+
+
+
+
+
+
+
+//        minusPlus();
+//        someThing();
+//        getDayMonthYear();
+//        checkAfter();
+//        //checkBefore();
+//        compareTo();
+//        // ISO Date
+//        convertStringtoLocalDate();
 
     }
 
@@ -21,8 +66,11 @@ public class TestSomeThing {
         LocalDate date =
                 LocalDate.parse("2020-01-08");
         System.out.println(date);
-        LocalDate dateFormat = LocalDate.parse("22-08-2020",
-                DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+
+        LocalDate dateFormat =
+                LocalDate.parse("22/08/2020",
+                DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+
         System.out.println(dateFormat.getMonth());
         System.out.println(dateFormat.getMonth().getValue());
         System.out.println(dateFormat.getDayOfMonth());
